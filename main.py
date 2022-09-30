@@ -5,6 +5,7 @@ import tcod
 
 # importing player movement
 from actions import EscapeAction, MovementAction
+from entity import Entity
 from input_handlers import EventHandler
 
 def main() -> None:
@@ -31,6 +32,8 @@ def main() -> None:
         while True:
             root_console.print(player_x, player_y, string="@")
             context.present(root_console)
+
+            root_console.clear()
 
             for event in tcod.event.wait():
                 
