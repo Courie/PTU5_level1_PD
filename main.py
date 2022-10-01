@@ -19,7 +19,11 @@ def main() -> None:
         "dejavu10x10_gs_tc.png", 32, 8, tcod.tileset.CHARMAP_TCOD
     )
 
+    
     event_handler = EventHandler()
+
+    player = Entity(int(screen_width / 2), int(screen_height / 2), "@", (255, 255, 255))
+    npc = Entity(int(screen_width / 2), int(screen_height / 2), "@", (255, 255, 0))
 
     with tcod.context.new_terminal(
         screen_width,
