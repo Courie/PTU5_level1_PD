@@ -1,4 +1,3 @@
-#I've included this as our beloved Kestutis is on linux
 #!/usr/bin/env python3
 
 # the library that we will use for the project
